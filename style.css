@@ -76,7 +76,8 @@ p {
   color: var(--Bright-orange);
 }
 
-.card__left .btn:hover {
+.card__left .btn:hover,
+.card__left .btn:focus {
   background-color: transparent;
   color: var(--Transparent-white);
   border: 2px solid var(--Transparent-white);
@@ -88,7 +89,8 @@ p {
   background-color: var(--Dark-cyan);
 }
 
-.card__center .btn:hover {
+.card__center .btn:hover,
+.card__center .btn:focus {
   background-color: transparent;
   color: var(--Transparent-white);
   border: 2px solid var(--Transparent-white);
@@ -109,7 +111,8 @@ p {
   color: var(--Very-dark-cyan);
 }
 
-.card__right .btn:hover {
+.card__right .btn:hover,
+.card__right .btn:focus {
   background-color: transparent;
   color: var(--Transparent-white);
   border: 2px solid var(--Transparent-white);
