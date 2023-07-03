@@ -1,0 +1,114 @@
+/* -----RESET---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- VARIABLES----- */
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-ight-gray: hsl(0, 0%, 95%);
+}
+
+/* ------ BASE STYLE ------- */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-ight-gray);
+  margin: 1rem;
+}
+
+/* ----- CARD -------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+
+.card > * {
+  flex-basis: 100%;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very-ight-gray);
+  margin: 2rem 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--Transparent-white);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--Very-ight-gray);
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* -------- CARD LEFT -------- */
+
+.card__left {
+  background-color: var(--Bright-orange);
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.card__left .btn {
+  color: var(--Bright-orange);
+}
+
+/* --------- CARD CENTER -------- */
+
+.card__center {
+  background-color: var(--Dark-cyan);
+}
+
+.card__center .btn {
+  color: var(--Dark-cyan);
+}
+
+/* ------ CARD RIGHT ------ */
+
+.card__right {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.card__right .btn {
+  color: var(--Very-dark-cyan);
+}
+
+/* ----DESKTOP -------- */
+
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+  .card {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .btn {
+    margin-top: 5rem;
+  }
+}
