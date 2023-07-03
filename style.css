@@ -76,10 +76,22 @@ p {
   color: var(--Bright-orange);
 }
 
+.card__left .btn:hover {
+  background-color: transparent;
+  color: var(--Transparent-white);
+  border: 2px solid var(--Transparent-white);
+}
+
 /* --------- CARD CENTER -------- */
 
 .card__center {
   background-color: var(--Dark-cyan);
+}
+
+.card__center .btn:hover {
+  background-color: transparent;
+  color: var(--Transparent-white);
+  border: 2px solid var(--Transparent-white);
 }
 
 .card__center .btn {
@@ -95,6 +107,12 @@ p {
 
 .card__right .btn {
   color: var(--Very-dark-cyan);
+}
+
+.card__right .btn:hover {
+  background-color: transparent;
+  color: var(--Transparent-white);
+  border: 2px solid var(--Transparent-white);
 }
 
 /* ----DESKTOP -------- */
